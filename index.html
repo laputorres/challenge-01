@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/semantic.min.css"/>
+    <title>challenge 01</title>
+  </head>
+  <body>
+    <header>
+      <img src="./img/Logo.png" alt="" />
+    </header>
+    <div class="container">
+      <div class="buttonsT-text">
+        <div class="rectangle-text">
+            <textarea name="" id="text-area" cols="10" rows="1"  pattern="[a-z]"
+            placeholder="Ingrese el texto aqui"></textarea>
+          
+        </div>
+        <div class="buttons">
+          <p>Solo letras minúsculas y sin acentos</p>
+          <button class="encriptar">Encriptar</button>
+          <button class="desencriptar">Desencriptar</button>
+        </div>
+      </div>
+
+      <div class="rectangle-white">
+        <div id="sin-mensaje">
+          <img src="./img/Muñeco.png" alt="" />
+          <b>Ningún mensaje fue encontrado</b><br />
+          <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+        </div>
+        <p id="texto-encriptado"></p>
+        
+      </div>
+    </div>
+    <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
